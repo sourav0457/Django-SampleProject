@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {%for album in all_albums%}
+        <!--Here all_albums is a collection of objects and album impersonates each object in all_albums. This is why album.id and album.album_title make sense-->
+        <li><a href = "/music/{{album.id}}">{{album.album_title}}</a></li>
+        {%endfor%}
+    </ul>
+</body>
+</html>
+
+
+
+<!--Some pointers to keep in mind:
+1) Loops and conditional statements are not followed by a colon(':')
+2) The end of loops and conditional statements must be explicitly defined. eg: In the above case the for loop is terminated using {%endfor%}
+3) Loops and conditional statements are enclosed within '{% %}' whereas standard variable values are enclosed within '{{ }}'
+-->
