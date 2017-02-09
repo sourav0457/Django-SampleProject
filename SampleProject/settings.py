@@ -55,7 +55,7 @@ ROOT_URLCONF = 'SampleProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],                                 #add 'music/templates' the brackets if it doesn't work
+        'DIRS': [],                                 #add 'music/templates' within the brackets if it doesn't work
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
